@@ -16,7 +16,7 @@ persist_with: envios_datagroup
 
 access_grant: limitacion {
   user_attribute: sector_empresa
-  allowed_values: ["Finanzas"]
+  allowed_values: ["Recursos humanos"]
 }
 
 # Explores allow you to join together different views (database tables) based on the
