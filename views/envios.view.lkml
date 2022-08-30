@@ -11,12 +11,14 @@ view: envios {
   # A dimension is a groupable field that can be used to filter query results.
   # This dimension will be called " Ltimo Evento" in Explore.
 
-  dimension: __ltimo_evento {
+  dimension: __ltimo_evento{
+    label: "Último evento"
     type: string
     sql: ${TABLE}.__ltimo_evento ;;
   }
 
   dimension: awb {
+    label: "Código"
     type: string
     sql: ${TABLE}.AWB ;;
   }
@@ -30,6 +32,7 @@ view: envios {
   # Looker converts dates and timestamps to the specified timeframes within the dimension group.
 
   dimension_group: cs {
+    label: "Último envio"
     type: time
     timeframes: [
       raw,
@@ -45,6 +48,7 @@ view: envios {
   }
 
   dimension_group: fecha___ltimo_evento {
+    label: "Última vez de uso"
     type: time
     timeframes: [
       raw,
@@ -60,6 +64,7 @@ view: envios {
   }
 
   dimension_group: fecha_primer_evento_controlado {
+    label: "Primera vez de uso"
     type: time
     timeframes: [
       raw,
@@ -75,6 +80,7 @@ view: envios {
   }
 
   dimension: first_clockstop__cs_ {
+    label: "Estatus del envio"
     type: string
     sql: ${TABLE}.First_Clockstop__CS_ ;;
   }
@@ -124,6 +130,7 @@ view: envios {
   }
 
   dimension: pa__s_de_destino {
+    label: "País de destino"
     type: string
     sql: ${TABLE}.Pa__s_de_destino ;;
   }
@@ -139,6 +146,7 @@ view: envios {
   }
 
   dimension: service_type {
+    label: "Tipo de servicio"
     type: number
     sql: ${TABLE}.ServiceType ;;
   }
