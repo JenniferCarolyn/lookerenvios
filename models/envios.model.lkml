@@ -16,7 +16,7 @@ persist_with: envios_datagroup
 
 access_grant: limitacion {
   user_attribute: sector_empresa
-  allowed_values: ["Recursos Humanos"]
+  allowed_values: ["Finanzas"]
 }
 
 # Explores allow you to join together different views (database tables) based on the
@@ -34,5 +34,11 @@ explore: envios {
   access_filter: {
     field: id_cliente
     user_attribute: restriccion_envios
+  }
+  join: envios_2 {
+    required_access_grants: [limitacion]
+    sql_on: ${envios.id_cliente} = ${envios_2.id_cliente} ;;
+    relationship: one_to_one
+    type: left_outer
   }
 }
