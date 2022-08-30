@@ -25,6 +25,9 @@ persist_with: envios_datagroup
 # Typically, join parameters require that you define the join type, join relationship, and a sql_on clause.
 # Each joined view also needs to define a primary key.
 
-explore: envios {}
-
-explore: dt_clientes_count {}
+explore: envios {
+  access_filter: {
+    field: id_cliente
+    user_attribute: restriccion_envios
+  }
+}
