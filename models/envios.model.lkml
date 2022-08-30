@@ -14,6 +14,11 @@ datagroup: envios_datagroup {
 
 persist_with: envios_datagroup
 
+access_grant: limitacion {
+  user_attribute: sector_empresa
+  allowed_values: ["Recursos Humanos"]
+}
+
 # Explores allow you to join together different views (database tables) based on the
 # relationships between fields. By joining a view into an Explore, you make those
 # fields available to users for data analysis.
@@ -26,6 +31,7 @@ persist_with: envios_datagroup
 # Each joined view also needs to define a primary key.
 
 explore: envios {
+  required_access_grants: [limitacion]
   access_filter: {
     field: id_cliente
     user_attribute: restriccion_envios
