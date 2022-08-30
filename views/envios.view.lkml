@@ -86,6 +86,7 @@ view: envios {
   }
 
   dimension: id_cliente {
+    required_access_grants: [limitacion]
     type: number
     sql: ${TABLE}.ID_cliente ;;
   }
