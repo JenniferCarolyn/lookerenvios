@@ -1,6 +1,6 @@
 # The name of this view in Looker is "Envios"
 view: envios {
-  required_access_grants: [limitacion]
+
   # The sql_table_name parameter indicates the underlying database table
   # to be used for all fields in this view.
   sql_table_name: `envios.envios`
@@ -13,7 +13,6 @@ view: envios {
   # This dimension will be called " Ltimo Evento" in Explore.
 
   dimension: __ltimo_evento{
-    required_access_grants: [limitacion]
     label: "Último evento"
     type: string
     sql: ${TABLE}.__ltimo_evento ;;

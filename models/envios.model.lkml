@@ -30,16 +30,4 @@ access_grant: limitacion {
 # Typically, join parameters require that you define the join type, join relationship, and a sql_on clause.
 # Each joined view also needs to define a primary key.
 
-explore: envios {
-  required_access_grants: [limitacion]
-  access_filter: {
-    field: id_cliente
-    user_attribute: restriccion_envios
-  }
-  join: envios_2 {
-    required_access_grants: [limitacion]
-    sql_on: ${envios.id_cliente} = ${envios_2.id_cliente} ;;
-    relationship: one_to_one
-    type: left_outer
-  }
-}
+explore: envios {}
