@@ -18,6 +18,11 @@ view: envios {
     sql: ${TABLE}.__ltimo_evento ;;
   }
 
+  dimension: ultimo_evento_2 {
+    type: string
+    sql: ${__ltimo_evento} ;;
+  }
+
   dimension: awb {
     label: "Código"
     type: string
