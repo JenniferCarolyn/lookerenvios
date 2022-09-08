@@ -18,7 +18,7 @@ view: envios {
     sql: ${TABLE}.__ltimo_evento ;;
   }
 
-  dimension: ultimo_evento_3 {
+  dimension: ultimo_evento_4 {
     type: string
     sql: ${__ltimo_evento} ;;
   }
