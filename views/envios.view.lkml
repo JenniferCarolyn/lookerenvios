@@ -15,9 +15,9 @@ view: envios {
    # type: string
     #sql: ${awb} ;;}
 
-  #filter: segundo_filtro {
-   # type: number
-    #sql: ${TABLE}.ID_cliente < 10 ;; }
+  filter: segundo_filtro {
+   type: number
+   sql: ${TABLE}.ID_cliente < 4 ;; }
 
   dimension: __ltimo_evento{
     label: "Último evento"
