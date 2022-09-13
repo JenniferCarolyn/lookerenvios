@@ -34,3 +34,5 @@ access_grant: limitacion {
 explore: envios {
   sql_always_where: ${segundo_filtro} ;;
 }
+explore: mensajes_vista1 {
+}
