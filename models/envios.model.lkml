@@ -3,7 +3,6 @@ connection: "envios"
 
 # include all the views
 include: "/views/**/*.view"
-include: "//proyecto_integrador_looker/views/**/*.view"
 
 # Datagroups define a caching policy for an Explore. To learn more,
 # use the Quick Help panel on the right to see documentation.
@@ -33,6 +32,4 @@ access_grant: limitacion {
 
 explore: envios {
   sql_always_where: ${segundo_filtro} ;;
-}
-explore: mensajes_vista1 {
 }
