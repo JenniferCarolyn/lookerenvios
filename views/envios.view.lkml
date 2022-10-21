@@ -11,6 +11,13 @@ view: envios {
   # Here's what a typical dimension looks like in LookML.
   # A dimension is a groupable field that can be used to filter query results.
   # This dimension will be called " Ltimo Evento" in Explore.
+  #filter: primer_filtro{
+   # type: string
+    #sql: ${awb} ;;}
+
+  filter: segundo_filtro {
+   type: number
+   sql: ${TABLE}.ID_cliente < 4 ;; }
 
   dimension: __ltimo_evento{
     label: "Último evento"
