@@ -31,5 +31,9 @@ access_grant: limitacion {
 # Each joined view also needs to define a primary key.
 
 explore: envios {
+  access_filter: {
+    field: awb
+    user_attribute: sector_empresa
+  }
   sql_always_where: ${segundo_filtro} ;;
 }
