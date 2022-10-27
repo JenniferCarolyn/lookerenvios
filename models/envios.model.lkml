@@ -20,5 +20,4 @@ persist_with: envios_datagroup
 
 
 explore: envios {
-  #sql_always_where: ${segundo_filtro} ;;
 }
