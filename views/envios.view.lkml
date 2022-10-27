@@ -36,7 +36,7 @@ view: envios {
   }
 
   dimension: awb {
-    required_access_grants: [limitacion]
+   # required_access_grants: [limitacion]
     label: "Código"
     type: string
     sql: ${TABLE}.AWB ;;
