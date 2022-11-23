@@ -1,6 +1,5 @@
 # Define the database connection to be used for this model.
 connection: "envios"
-connection: "sube_2022"
 
 # include all the views
 include: "/views/**/*.view"
