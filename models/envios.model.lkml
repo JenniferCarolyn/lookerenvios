@@ -10,7 +10,7 @@ include: "/views/**/*.view"
 
 datagroup: envios_datagroup {
   sql_trigger: SELECT MAX(order_id) FROM envios;;
-  max_cache_age: "1 hour"
+  max_cache_age: "12 hour"
 }
 
 persist_with: envios_datagroup
