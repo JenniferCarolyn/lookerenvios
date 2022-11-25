@@ -21,3 +21,4 @@ persist_with: envios_datagroup
 
 explore: envios {
 }
+explore: _test_home_page {}
